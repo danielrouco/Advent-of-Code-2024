@@ -22,9 +22,11 @@ void sort(int array[], int length){
 }
 
 int main(){
+    //Input
     int groups[2][1000];
     int i; 
     for(i = 0; i < 1000 && scanf("%d %d", &groups[0][i], &groups[1][i]) != EOF; i++){}
+
     sort(&groups[0][0], i);
     sort(&groups[1][0], i);
     int distance;
