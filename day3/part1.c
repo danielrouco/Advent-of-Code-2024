@@ -16,10 +16,10 @@ int number(int num[3]){
             result += num[i] * pow(10, 2 - i);
         }
     }
-    if(num[2] == -1 && num[1] == -1){
-        result /= pow(10, 2);
-    }else if(num[2] == -1){
-        result /= pow(10, 1);
+    for(int i = 1; i < 3; i++){
+        if(num[i] == -1){
+            result /= 10;
+        }
     }
     return result;
 }
@@ -58,7 +58,6 @@ int condition(int state, char character, int numbers[2][3], int *result){
 }
 
 int main(){
-    
     int state = 1;
     char character = ' ';
     int numbers[2][3] = {{-1, -1, -1},{-1, -1, -1}};
