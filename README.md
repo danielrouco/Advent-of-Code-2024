@@ -10,6 +10,6 @@ All days solutions can be run in a bash terminal passing the input text by the s
 2. Put the input in a txt file
 3. Pass the input file by the standard input to the binary file:
 
-```
+```sh
 cat input_file.txt | ./binary_file
 ```
